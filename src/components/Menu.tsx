@@ -29,8 +29,6 @@ export default function Menus() {
     }
   }
 
-  console.log(MenuSections);
-
   return (
     <>
       {DisplaySectionLinks && (
