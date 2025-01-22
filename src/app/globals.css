@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.custom-arrow-transition {
+  transition: transform 0.5s ease;
+}
+
+.custom-sticky-sections {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.custom-order-btn {
+  position: sticky;
+  bottom: 10px;
+  margin-bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
