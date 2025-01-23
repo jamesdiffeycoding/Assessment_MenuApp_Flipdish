@@ -2,11 +2,11 @@
 
 export default function BtnBar({ MenuSections, handleSectionClick }) {
   return (
-    <section className="flex custom-sticky-sections z-10 w-full justify-center bg-white">
+    <section className="flex custom-sticky-sections z-10 w-full justify-end bg-white">
       {MenuSections.map((section) => (
         <button
           key={section.MenuSectionId}
-          className="rounded-full text-slate-500 border border-slate-400 p-2 m-1 text-xl hover:bg-slate-100"
+          className="rounded-full text-slate-400 border border-slate-400 p-2 m-1 text-xl hover:text-black hover:bg-slate-100"
           onClick={() => {
             handleSectionClick(section.MenuSectionId.toString(), true);
           }}

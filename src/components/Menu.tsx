@@ -29,24 +29,20 @@ export default function Menus() {
     }
   }
 
-  console.log(MenuSections);
-
   return (
-    <>
+    <div className="w-[90%] max-w-[1200px]">
       {DisplaySectionLinks && (
         <BtnBar
           handleSectionClick={handleSectionClick}
           MenuSections={MenuSections}
         />
       )}
-      <section className="w-[90%]">
-        <Accordian
-          handleSectionClick={handleSectionClick}
-          MenuSections={MenuSections}
-          visibleSections={visibleSections}
-        />
-        <OrderBtn />
-      </section>
-    </>
+      <Accordian
+        handleSectionClick={handleSectionClick}
+        MenuSections={MenuSections}
+        visibleSections={visibleSections}
+      />
+      <OrderBtn />
+    </div>
   );
 }

@@ -3,9 +3,13 @@ export default function OrderBtn() {
     <div className="custom-order-btn text-base flex justify-end">
       <button
         className="p-2 bg-green-400 rounded-md hover:bg-green-500 text-white"
-        onClick={() => alert("Placeholder for order confirmation transition")}
+        onClick={() =>
+          alert(
+            "PLACEDHOLDER: On real site the page would redirect or a new UI element would appear"
+          )
+        }
       >
-        Confirm order
+        Order now
       </button>
     </div>
   );
