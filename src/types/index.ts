@@ -32,6 +32,27 @@ type TMenuItemMetadata = {
 };
 
 type TMenuItemOptionSet = {
+  MenuItemOptionSetId: number;
+  Name: string | null;
+  IsMasterOptionSet: boolean;
+  DisplayOrder: number;
+  MinSelectCount: number;
+  MaxSelectCount: number;
+  IsDeleted: boolean;
+  PublicId: string;
+  MenuItemOptionSetItems: TMenuItemOptionSetItem[];
+  ImageName: string | null;
+  ImageUrl: string | null;
+  CellAspectRatio: number;
+  CellLayoutType: number;
+  MinPrice?: number;
+  Price?: number;
+  TaxRateId?: number | null;
+  TaxValue?: number;
+  MenuItemOptionSetMetadata: TMenuItemMetadata[];
+};
+
+type TMenuItemOptionSetItem = {
   MenuItemOptionSetItemId: number;
   Name: string;
   Price: number;
@@ -42,10 +63,12 @@ type TMenuItemOptionSet = {
   DisplayOrder: number;
   IsDeleted: boolean;
   Tags: string[];
-  PublicId: string;
   NextMenuItemOptionSetId: number | null;
+  PublicId: string;
   ImageName: string | null;
   ImageUrl: string | null;
+  CellAspectRatio: number;
+  CellLayoutType: number;
   OptionSetItemMetadata: TMenuItemMetadata[];
 };
 
@@ -63,13 +86,24 @@ export type TMenuSectionItem = {
   IsDeleted: boolean;
   IsHiddenFromUsers: boolean;
   MenuItems: TMenuItem[];
-  MenuSectionAvailability: {
-    AvailabilityMode: number;
-    AvailableTimes: string[] | null;
-    MenuSectionId: number;
-  };
+  MenuSectionAvailability: TMenuSectionAvailability;
   MenuSectionId: number;
   MenuSectionMetadata: TMenuItemMetadata[];
   Name: string;
   PublicId: string;
+};
+
+export type TMenuSectionAvailability = {
+  MenuSectionId: number;
+  AvailableTimes: TAvailableTime[] | null;
+  AvailabilityMode: number;
+};
+
+export type TAvailableTime = {
+  BusinessHoursPeriodId: number;
+  DayOfWeek: number;
+  StartTime: string;
+  Period: string;
+  StartTimeEarly: string;
+  PeriodEarly: string;
 };
