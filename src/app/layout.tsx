@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { MenuWrapper } from "@/context/MenuContext";
 
 export const metadata: Metadata = {
   title: "Flipdish Food Menu",
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="custom-flipdish-client-font">{children}</body>
+      <body className="custom-flipdish-client-font">
+        <MenuWrapper>{children}</MenuWrapper>
+      </body>
     </html>
   );
 }

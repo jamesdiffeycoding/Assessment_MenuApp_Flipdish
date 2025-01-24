@@ -107,3 +107,9 @@ export type TAvailableTime = {
   StartTimeEarly: string;
   PeriodEarly: string;
 };
+
+export type TMenuContext = {
+  handleSectionClick: (categoryId: string, collapseOthers: boolean) => void;
+  visibleSections: string[];
+  MenuSections: TMenuSection;
+};

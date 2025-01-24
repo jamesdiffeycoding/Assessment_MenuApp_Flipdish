@@ -1,6 +1,10 @@
 "use client";
 
-export default function BtnBar({ MenuSections, handleSectionClick }) {
+import { useMenuContext } from "@/context/MenuContext";
+
+export default function BtnBar() {
+  const { MenuSections, handleSectionClick } = useMenuContext();
+
   return (
     <section className="flex custom-sticky-sections z-10 w-full justify-end bg-white">
       {MenuSections.map((section) => (

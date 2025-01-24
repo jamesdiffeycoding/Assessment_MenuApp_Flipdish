@@ -1,20 +1,14 @@
 "use client";
 
 import Card from "@/components/Card";
-import Image from "next/image";
 import { TMenuSection, TMenuSectionItem } from "@/types";
-
+import { useMenuContext } from "@/context/MenuContext";
 import AccordianHeading from "./Accordian-Heading";
 
-export default function Accordian({
-  handleSectionClick,
-  MenuSections,
-  visibleSections,
-}: {
-  handleSectionClick: (categoryId: string, collapseOthers: boolean) => void;
-  MenuSections: TMenuSection;
-  visibleSections: string[];
-}) {
+export default function Accordian() {
+  const { MenuSections, visibleSections, handleSectionClick } =
+    useMenuContext();
+
   return (
     <div className="w-full p-2 min-h-[70vh]">
       {/* SECTION HEADING---------------------------- */}

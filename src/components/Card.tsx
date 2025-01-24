@@ -25,7 +25,7 @@ export default function Card({ item }: { item: TMenuItem }) {
                   key={option.Name}
                   className="flex flex-col items-center justify-between h-[3rem] pl-5"
                 >
-                  <label for={`item-${item.MenuItemId}`}>
+                  <label htmlFor={`item-${item.MenuItemId}`}>
                     <span className="font-light pl-2">
                       {option.Name} (+${option.Price})
                     </span>
