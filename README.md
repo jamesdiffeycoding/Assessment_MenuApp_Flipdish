@@ -15,6 +15,7 @@ Mobile first, responsive layout
 
 ## Additions
 
+Add type declaration for menu object
 Add loading message when fetching data
 Add zoom feature when image hovered where space permits
 Add placeholder image if image not found (e.g. on "Chris's test item")
