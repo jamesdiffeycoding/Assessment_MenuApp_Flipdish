@@ -1,12 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
-
 * {
   padding: 0;
   margin: 0;
-  font-family: "RocknRoll One", serif; /* Font used by Flipdish on project for client IroSushi */
+  font-family: "RocknRoll One", Arial, serif; /* Font used by Flipdish on project for client IroSushi */
   font-weight: 400;
 }
