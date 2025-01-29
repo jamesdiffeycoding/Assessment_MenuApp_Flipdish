@@ -43,7 +43,7 @@ export default function Home() {
                     <img
                       src={item.ImageUrl || "/placeholder.jpg"}
                       alt={`Image of ${item.Name}`}
-                      className="h-[100px] min-w-[100px] max-w-[50px] object-cover rounded-lg"
+                      className="h-[100px] min-w-[100px] max-w-[100px] object-cover rounded-lg hover:w-[200px] hover:max-w-[200px] transition-all "
                     />
                   </div>
                 ))}

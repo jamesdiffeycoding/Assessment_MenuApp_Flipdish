@@ -2,31 +2,30 @@
 
 This project involves rendering a simple menu object for the company Flipdish's tech assessment.
 
-It is available to view online at https://flipdish-tech-assessment.vercel.app/.
+It is available to view online at [Flipdish Tech Assessment](https://flipdish-tech-assessment.vercel.app/).
 
 # Developers
 
 npm i - install package
 npm run dev - run project on local host 3000
 
-# Requirements
+# Requirements (all met)
 
-## Met
-
-Deploy online at https://flipdish-tech-assessment.vercel.app/
-
-## Not met yet
-
+Deploy [online on Vercel](https://flipdish-tech-assessment.vercel.app/)
 Render menu item name
 Render menu item image
-Render menu item description
 Render menu item price
+Render menu item description
 Mobile first, responsive layout
-Handle isMasterOptionSet to handle as standalone product
-Handle ignoring MenuSectionItem when isMasterOptionSet is true
 
-# Technical decisions
+## Additions
 
-Flipdish styling - favicon and font
+Add loading message when fetching data
+Add zoom feature when image hovered
+Add placeholder image if image not found (e.g. on "Chris's test item")
+Flipcard link, font, and food-favicon
 
 # If I had more time
+
+Investigate backend API isMasterOptionSet data inconsistencies.
+Implement add-to-cart, payment, time-availability and other features of API.
