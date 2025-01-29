@@ -27,4 +27,6 @@ Handle ignoring MenuSectionItem when isMasterOptionSet is true
 
 # Technical decisions
 
+Flipdish styling - favicon and font
+
 # If I had more time
