@@ -1,3 +1,9 @@
+# Overview
+
+This project involves rendering a simple menu object for the company Flipdish's tech assessment.
+
+It is available to view online at https://flipdish-tech-assessment.vercel.app/.
+
 # Developers
 
 npm i - install package
@@ -6,6 +12,8 @@ npm run dev - run project on local host 3000
 # Requirements
 
 ## Met
+
+Deploy online at https://flipdish-tech-assessment.vercel.app/
 
 ## Not met yet
 
