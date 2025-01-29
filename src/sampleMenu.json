@@ -23,7 +23,7 @@
           "IsAvailable": true,
           "MenuItemOptionSets": [
             {
-              "Name": null,
+              "Name": "Size",
               "MenuItemOptionSetId": 1494260,
               "IsMasterOptionSet": false,
               "DisplayOrder": 0,
@@ -109,7 +109,7 @@
           "IsAvailable": true,
           "MenuItemOptionSets": [
             {
-              "Name": null,
+              "Name": "Size",
               "MenuItemOptionSetId": 1725424,
               "IsMasterOptionSet": true,
               "DisplayOrder": -1,
@@ -166,83 +166,7 @@
               "MenuItemOptionSetMetadata": []
             },
             {
-              "Name": null,
-              "MenuItemOptionSetId": 1725425,
-              "IsMasterOptionSet": false,
-              "DisplayOrder": 0,
-              "MinSelectCount": 0,
-              "MaxSelectCount": 3,
-              "IsDeleted": false,
-              "PublicId": "d44ded87-003c-45c1-967d-d8f754a5624c",
-              "MenuItemOptionSetItems": [
-                {
-                  "MenuItemOptionSetItemId": 15749314,
-                  "Name": "Cheese",
-                  "Price": 0.2,
-                  "TaxRateId": null,
-                  "TaxRate": null,
-                  "TaxValue": 0.0,
-                  "IsAvailable": true,
-                  "DisplayOrder": 0,
-                  "IsDeleted": false,
-                  "Tags": [],
-                  "NextMenuItemOptionSetId": 1725427,
-                  "PublicId": "b8a2e15d-d569-4a1f-a4f6-70008e52c856",
-                  "ImageName": null,
-                  "ImageUrl": null,
-                  "CellAspectRatio": 0.0,
-                  "CellLayoutType": 0,
-                  "OptionSetItemMetadata": []
-                },
-                {
-                  "MenuItemOptionSetItemId": 15749315,
-                  "Name": "Onions",
-                  "Price": 0.2,
-                  "TaxRateId": null,
-                  "TaxRate": null,
-                  "TaxValue": 0.0,
-                  "IsAvailable": true,
-                  "DisplayOrder": 1,
-                  "IsDeleted": false,
-                  "Tags": [],
-                  "NextMenuItemOptionSetId": -1,
-                  "PublicId": "49e0f252-259b-4998-8d5e-97f3e5ea9d82",
-                  "ImageName": null,
-                  "ImageUrl": null,
-                  "CellAspectRatio": 0.0,
-                  "CellLayoutType": 0,
-                  "OptionSetItemMetadata": []
-                },
-                {
-                  "MenuItemOptionSetItemId": 15749316,
-                  "Name": "Sausage",
-                  "Price": 0.5,
-                  "TaxRateId": null,
-                  "TaxRate": null,
-                  "TaxValue": 0.0,
-                  "IsAvailable": true,
-                  "DisplayOrder": 2,
-                  "IsDeleted": false,
-                  "Tags": [],
-                  "NextMenuItemOptionSetId": -1,
-                  "PublicId": "87317876-f7b0-4bfe-bf92-4565a4f8af93",
-                  "ImageName": null,
-                  "ImageUrl": null,
-                  "CellAspectRatio": 0.0,
-                  "CellLayoutType": 0,
-                  "OptionSetItemMetadata": []
-                }
-              ],
-              "ImageName": null,
-              "ImageUrl": null,
-              "CellAspectRatio": 0.0,
-              "CellLayoutType": 0,
-              "MinPrice": 0.2,
-              "MenuItemId": 1446427,
-              "MenuItemOptionSetMetadata": []
-            },
-            {
-              "Name": null,
+              "Name": "Toppings",
               "MenuItemOptionSetId": 1725426,
               "IsMasterOptionSet": false,
               "DisplayOrder": 1,
@@ -318,7 +242,7 @@
               "MenuItemOptionSetMetadata": []
             },
             {
-              "Name": null,
+              "Name": "Drinks",
               "MenuItemOptionSetId": 1725427,
               "IsMasterOptionSet": false,
               "DisplayOrder": 2,
@@ -394,7 +318,7 @@
               "MenuItemOptionSetMetadata": []
             },
             {
-              "Name": null,
+              "Name": "Dips",
               "MenuItemOptionSetId": 1725688,
               "IsMasterOptionSet": false,
               "DisplayOrder": 3,
@@ -578,7 +502,7 @@
           "IsAvailable": true,
           "MenuItemOptionSets": [
             {
-              "Name": null,
+              "Name": "Toppings",
               "MenuItemOptionSetId": 1494263,
               "IsMasterOptionSet": false,
               "DisplayOrder": 0,
@@ -919,7 +843,7 @@
           "IsAvailable": true,
           "MenuItemOptionSets": [
             {
-              "Name": null,
+              "Name": "Wines",
               "MenuItemOptionSetId": 1494265,
               "IsMasterOptionSet": false,
               "DisplayOrder": 0,
@@ -1062,7 +986,7 @@
           "IsAvailable": true,
           "MenuItemOptionSets": [
             {
-              "Name": null,
+              "Name": "Drinks",
               "MenuItemOptionSetId": 1494267,
               "IsMasterOptionSet": false,
               "DisplayOrder": 0,

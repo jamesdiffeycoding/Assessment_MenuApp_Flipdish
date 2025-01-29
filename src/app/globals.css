@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* NOTE: All classes below prefixed "custom" to differentiate from tailwind */
+.custom-arrow-transition {
+  transition: transform 0.5s ease;
+}
+
+.custom-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Font used by Flipdish on project for client IroSushi */
+.custom-flipdish-client-font {
+  font-family: "RocknRoll One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.custom-order-btn {
+  position: sticky;
+  bottom: 10px;
+  margin-bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.custom-sticky-sections {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+@media screen and (min-width: 650px) {
+  .custom-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .custom-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
