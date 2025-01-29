@@ -21,11 +21,12 @@ Mobile first, responsive layout
 ## Additions
 
 Add loading message when fetching data
-Add zoom feature when image hovered
+Add zoom feature when image hovered where space permits
 Add placeholder image if image not found (e.g. on "Chris's test item")
 Flipcard link, font, and food-favicon
 
 # If I had more time
 
 Investigate backend API isMasterOptionSet data inconsistencies.
-Implement add-to-cart, payment, time-availability and other features of API.
+Implement add-to-cart, payment, optional extras, time-availability and other features of API.
+Add navigation bar to help user navigate larger menus.
