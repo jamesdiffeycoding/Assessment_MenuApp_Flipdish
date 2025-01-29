@@ -4,11 +4,6 @@ This project involves rendering a simple menu object for the company Flipdish's 
 
 It is available to view online at [Flipdish Tech Assessment](https://flipdish-tech-assessment.vercel.app/).
 
-# Developers
-
-npm i - install package
-npm run dev - run project on local host 3000
-
 # Requirements (all met)
 
 Deploy [online on Vercel](https://flipdish-tech-assessment.vercel.app/)
@@ -29,4 +24,10 @@ Flipcard link, font, and food-favicon
 
 Investigate backend API isMasterOptionSet data inconsistencies.
 Implement add-to-cart, payment, optional extras, time-availability and other features of API.
-Add navigation bar to help user navigate larger menus.
+Add navigation bar and section toggles to help user navigate larger menus.
+Add testing for features when added later.
+
+# Scripts
+
+npm i - install packages
+npm run dev - run project on [localhost:3000](http://localhost:3000/)
