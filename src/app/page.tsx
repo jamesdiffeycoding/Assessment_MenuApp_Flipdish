@@ -7,7 +7,7 @@ const url =
   "https://menus.flipdish.co/prod/16798/e6220da2-c34a-4ea2-bb51-a3e190fc5f08.json";
 
 export default function Home() {
-  const [sections, setSections] = useState<TMenuSection>([]); // empty array allowed as values are optional
+  const [sections, setSections] = useState<TMenuSection>([]); // type values set to optional
 
   useEffect(() => {
     axios.get<TMenu>(url).then(({ data }) => {
