@@ -41,12 +41,12 @@ export default function Home() {
                   if (itemShouldDisplayAlone(menuItem)) {
                     return (
                       <MenuItem
-                        name={menuItem.Name}
                         description={menuItem.Description}
-                        option={null}
-                        price={menuItem.Price}
                         imageUrl={menuItem.ImageUrl}
                         key={menuItem.MenuItemId}
+                        name={menuItem.Name}
+                        option={null}
+                        price={menuItem.Price}
                       />
                     );
                   } else {
@@ -55,12 +55,12 @@ export default function Home() {
                         return optionSet.MenuItemOptionSetItems.map(
                           (optionSetItem) => (
                             <MenuItem
-                              name={menuItem.Name}
                               description={menuItem.Description}
-                              option={optionSetItem.Name}
-                              price={optionSetItem.Price}
                               imageUrl={menuItem.ImageUrl}
                               key={optionSetItem.MenuItemOptionSetItemId}
+                              name={menuItem.Name}
+                              option={optionSetItem.Name}
+                              price={optionSetItem.Price}
                             />
                           )
                         );
