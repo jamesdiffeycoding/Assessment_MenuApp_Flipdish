@@ -12,6 +12,7 @@ Render menu item image
 Render menu item price
 Render menu item description
 Mobile first, responsive layout
+Include menu items and prices with options depending on flag (isMasterOptionSet)
 
 ## Additions
 
@@ -24,8 +25,8 @@ Flipcard link, font, and food-favicon
 # If I had more time
 
 Investigate backend API isMasterOptionSet data inconsistencies.
-Implement add-to-cart, payment, optional extras, time-availability and other features of API.
 Add navigation bar and section toggles to help user navigate larger menus.
+Implement add-to-cart, payment, optional extras, time-availability and other features of API.
 Add testing for features when added later.
 
 # Scripts

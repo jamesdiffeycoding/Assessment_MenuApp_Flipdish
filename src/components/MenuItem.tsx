@@ -1,10 +1,12 @@
 export default function MenuItem({
   name,
   description,
+  option,
   price,
   imageUrl,
 }: {
   name: string;
+  option: string | null;
   description: string | null;
   price: number | null;
   imageUrl: string | null;
@@ -12,7 +14,9 @@ export default function MenuItem({
   return (
     <div className="flex justify-between border p-2 border-slate-100 rounded-lg hover:border hover:bg-slate-100 cursor-pointer">
       <div className="flex flex-col justify-between">
-        <p className="font-bold">{name}</p>
+        <p className="font-bold">
+          {name} <span>{option && `| ${option}`}</span>
+        </p>
         <p className="text-sm">{description}</p>
         <p className="text-sm">£{price}</p>
       </div>

@@ -41,6 +41,7 @@ export default function Home() {
                       <MenuItem
                         name={menuItem.Name}
                         description={menuItem.Description}
+                        option={null}
                         price={menuItem.Price}
                         imageUrl={menuItem.ImageUrl}
                         key={menuItem.MenuItemId}
@@ -52,8 +53,9 @@ export default function Home() {
                         return optionSet.MenuItemOptionSetItems.map(
                           (optionSetItem) => (
                             <MenuItem
-                              name={`${menuItem.Name} - ${optionSetItem.Name}`}
+                              name={menuItem.Name}
                               description={menuItem.Description}
+                              option={optionSetItem.Name}
                               price={optionSetItem.Price}
                               imageUrl={menuItem.ImageUrl}
                               key={optionSetItem.MenuItemOptionSetItemId}
