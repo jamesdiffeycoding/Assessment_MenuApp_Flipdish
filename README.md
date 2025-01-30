@@ -22,13 +22,13 @@ It is available to view online at [Flipdish Tech Assessment](https://flipdish-te
 - Add placeholder image if image not found (e.g. on "Chris's test item") ✓ 
 - Flipcard link, font, and food-favicon ✓ 
 
-# If I had more time
+## If I had more time
 
 - Add navigation bar and section toggles to help user navigate larger menus.
 - Implement add-to-cart, payment, optional extras, time-availability and other features of API.
 - Add testing for features when added later.
 
-# Scripts
+## Scripts
 
 - npm i - install packages
 - npm run dev - run project on [localhost:3000](http://localhost:3000/)
