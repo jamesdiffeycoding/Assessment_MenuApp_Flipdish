@@ -1,15 +1,15 @@
 export default function MenuItem({
-  name,
   description,
+  imageUrl,
+  name,
   option,
   price,
-  imageUrl,
 }: {
+  description: string | null;
+  imageUrl: string | null;
   name: string;
   option: string | null;
-  description: string | null;
   price: number | null;
-  imageUrl: string | null;
 }) {
   return (
     <div className="flex justify-between border p-2 border-slate-100 rounded-lg hover:border hover:bg-slate-100 cursor-pointer">

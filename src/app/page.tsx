@@ -1,12 +1,12 @@
 "use client";
 import axios from "axios";
 import MenuItem from "@/components/MenuItem";
-import { useState, useEffect } from "react";
 import {
   TMenuItem,
   TMenuItemOptionSet,
   TMenuSectionHeading,
 } from "../../types";
+import { useEffect, useState } from "react";
 
 const url =
   "https://menus.flipdish.co/prod/16798/e6220da2-c34a-4ea2-bb51-a3e190fc5f08.json";
