@@ -4,7 +4,7 @@ This project involves rendering a simple menu object for the company Flipdish's 
 
 It is available to view online at [Flipdish Tech Assessment](https://flipdish-tech-assessment.vercel.app/).
 
-# Requirements (all met)
+## Requirements (all met)
 
 - Deploy [online on Vercel](https://flipdish-tech-assessment.vercel.app/) ✓ 
 - Render menu item name ✓ 
@@ -16,11 +16,11 @@ It is available to view online at [Flipdish Tech Assessment](https://flipdish-te
 
 ## Additions
 
-- Add type declaration for menu object
-- Add loading message when fetching data
-- Add zoom feature when image hovered where space permits
-- Add placeholder image if image not found (e.g. on "Chris's test item")
-- Flipcard link, font, and food-favicon
+- Add type declaration for menu object ✓ 
+- Add loading message when fetching data ✓ 
+- Add zoom feature when image hovered where space permits ✓ 
+- Add placeholder image if image not found (e.g. on "Chris's test item") ✓ 
+- Flipcard link, font, and food-favicon ✓ 
 
 # If I had more time
 
