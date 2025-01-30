@@ -3,7 +3,7 @@
 /* __________________ Nest Level 0 __________________ */
 
 // The whole menu
-export type TMenu = {
+type TMenu = {
   ConcessionStores?: any[]; // unsure of type
   DisplaySectionLinks?: boolean;
   MenuId?: number;
@@ -15,7 +15,7 @@ export type TMenu = {
 
 /* __________________ Nest Level 1 __________________ */
 
-export type TMenuSectionsArray = TMenuSectionHeading[];
+type TMenuSectionsArray = TMenuSectionHeading[];
 
 /* __________________ Nest Level 2 __________________ */
 
@@ -70,7 +70,7 @@ export type TMenuItem = {
   MenuItemMetadata: TMenuItemMetadata[];
 };
 
-export type TMenuSectionAvailability = {
+type TMenuSectionAvailability = {
   MenuSectionId: number;
   AvailableTimes: TAvailableTime[] | null;
   AvailabilityMode: number;
@@ -105,7 +105,7 @@ type TMenuItemMetadata = {
   value: string;
 };
 
-export type TAvailableTime = {
+type TAvailableTime = {
   BusinessHoursPeriodId: number;
   DayOfWeek: number;
   StartTime: string;
