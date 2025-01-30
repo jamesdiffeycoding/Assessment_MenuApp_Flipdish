@@ -21,10 +21,12 @@ export default function Home() {
   }, []);
 
   function itemShouldDisplayAlone(menuItem: TMenuItem) {
+    // if an item has any option sets where isMasterOptionSet is true, it should not be displayed alone
     return !menuItem.MenuItemOptionSets.some(
       (optionSet: TMenuItemOptionSet) => optionSet.IsMasterOptionSet === true
     );
   }
+
   return (
     <div className="m-4 flex justify-center">
       <div className="w-[90%] max-w-[1000px]">
