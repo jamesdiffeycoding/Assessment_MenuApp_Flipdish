@@ -7,17 +7,11 @@ It is available to view online at [Flipdish Tech Assessment](https://flipdish-te
 # Requirements (all met)
 
 - Deploy [online on Vercel](https://flipdish-tech-assessment.vercel.app/) ✓ 
-
 - Render menu item name ✓ 
-
 - Render menu item image ✓ 
-
 - Render menu item price ✓ 
-
 - Render menu item description ✓ 
-
 - Mobile first, responsive layout ✓ 
-
 - Include menu items and prices with options depending on flag (isMasterOptionSet) ✓ 
 
 ## Additions
