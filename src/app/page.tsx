@@ -69,7 +69,7 @@ export default function Home() {
                 })}
               </div>
               {section.MenuItems.length === 0 && (
-                <p>We're whipping something up - come back soon!</p>
+                <p>We&apos;re whipping something up - come back soon!</p>
               )}
             </div>
           ))}
