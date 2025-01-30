@@ -24,7 +24,6 @@ Flipcard link, font, and food-favicon
 
 # If I had more time
 
-Investigate backend API isMasterOptionSet data inconsistencies.
 Add navigation bar and section toggles to help user navigate larger menus.
 Implement add-to-cart, payment, optional extras, time-availability and other features of API.
 Add testing for features when added later.
