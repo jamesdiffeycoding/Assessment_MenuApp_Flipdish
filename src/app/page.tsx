@@ -19,7 +19,7 @@ export default function Home() {
   function itemShouldDisplayAlone(menuItem: TMenuItem) {
     // if an item has any option sets where isMasterOptionSet is true, it should not be displayed alone
     return !menuItem.MenuItemOptionSets.some(
-      (optionSet: TMenuItemOptionSet) => optionSet.IsMasterOptionSet === true
+      (optionSet) => optionSet.IsMasterOptionSet === true
     );
   }
 
