@@ -1,18 +1,14 @@
 "use client";
 import axios from "axios";
 import MenuItem from "@/components/MenuItem";
-import {
-  TMenuItem,
-  TMenuItemOptionSet,
-  TMenuSectionHeading,
-} from "../../types";
+import { TMenuItem, TMenuItemOptionSet, TMenuSectionsArray } from "../../types";
 import { useEffect, useState } from "react";
 
 const url =
   "https://menus.flipdish.co/prod/16798/e6220da2-c34a-4ea2-bb51-a3e190fc5f08.json";
 
 export default function Home() {
-  const [sections, setSections] = useState([]);
+  const [sections, setSections] = useState<TMenuSectionsArray>([]);
 
   useEffect(() => {
     axios.get(url).then(({ data }) => {
@@ -33,11 +29,11 @@ export default function Home() {
         <div className="flex flex-col gap-8 mt-4 justify-center">
           {!sections.length && <p>Loading...</p>}
 
-          {sections.map((section: TMenuSectionHeading) => (
+          {sections.map((section) => (
             <div key={section.MenuSectionId}>
               <h2 className="text-xl pb-2 font-bold">{section.Name}</h2>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                {section.MenuItems.map((menuItem: TMenuItem) => {
+                {section.MenuItems.map((menuItem) => {
                   if (itemShouldDisplayAlone(menuItem)) {
                     return (
                       <MenuItem

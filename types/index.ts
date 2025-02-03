@@ -15,7 +15,7 @@ type TMenu = {
 
 /* __________________ Nest Level 1 __________________ */
 
-type TMenuSectionsArray = TMenuSectionHeading[];
+export type TMenuSectionsArray = TMenuSectionHeading[];
 
 /* __________________ Nest Level 2 __________________ */
 
