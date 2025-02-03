@@ -1,7 +1,7 @@
 "use client";
 import axios from "axios";
 import MenuItem from "@/components/MenuItem";
-import { TMenuItem, TMenuItemOptionSet, TMenuSectionsArray } from "../../types";
+import { TMenuItem, TMenuSectionsArray } from "../../types";
 import { useEffect, useState } from "react";
 
 const url =
