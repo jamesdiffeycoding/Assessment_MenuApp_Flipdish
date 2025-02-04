@@ -37,7 +37,7 @@ export default function MenuItemCard({
       <img
         src={imageUrl || "/placeholder.jpg"}
         alt={`Image of ${name} ${option && `| ${option}`}`}
-        className="object-cover w-[20%] hover:w-[30%] transition-all duration-[500ms] rounded-r-lg"
+        className="object-cover w-[20%] hover:w-[30%] transition-all duration-[300ms] rounded-r-lg"
       />
     </section>
   );
