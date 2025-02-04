@@ -59,7 +59,7 @@ export default function Home() {
             </p>
           )}
 
-          {sections.map((section, index) => (
+          {sections.map((section) => (
             <div key={section.MenuSectionId}>
               <h2 className="text-xl pb-2 font-bold">{section.Name}</h2>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
