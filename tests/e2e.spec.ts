@@ -79,7 +79,9 @@ test("does not have incorrect option sets", async ({ page }) => {
   ).not.toBeVisible();
 });
 
-test("has correct prices", async ({ page }) => {
+test("has correct prices for both items and options in Intl format", async ({
+  page,
+}) => {
   await page.goto(localHost);
   const pizzaCard = await page.locator("section").filter({ hasText: "Pizza" });
   await expect(pizzaCard.locator("p.text-sm")).toHaveText("£10.00");
