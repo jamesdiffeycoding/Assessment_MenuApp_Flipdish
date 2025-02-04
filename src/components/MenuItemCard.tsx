@@ -11,22 +11,27 @@ export default function MenuItemCard({
   option: string | null;
   price: number | null;
 }) {
+  const maxDescriptionLength = 90;
+
   return (
-    <div className="h-[120px] flex justify-between border border-slate-200 rounded-lg hover:border hover:bg-slate-100 cursor-pointer">
-      <div className="flex flex-col justify-between p-[12px]">
+    <section className="h-[120px] flex justify-between border border-slate-200 rounded-lg hover:border hover:bg-slate-100 cursor-pointer">
+      <div className="w-[70%] flex flex-col justify-between p-[12px]">
         <div>
           <p className="font-bold">
             {name} <span>{option && `| ${option}`}</span>
           </p>
-          <p className="text-xs">{description}</p>
+          <p className="text-[11px]">
+            {description?.slice(0, maxDescriptionLength)}
+            {description && description.length > maxDescriptionLength && "..."}
+          </p>
         </div>
         <p className="text-sm">£{price}</p>
       </div>
       <img
         src={imageUrl || "/placeholder.jpg"}
         alt={`Image of ${name}`}
-        className="h-full min-w-[100px] max-w-[100px] hover:in-w-[150px] hover:min-w-[40%] hover:max-w-[40%] object-cover rounded-r-lg transition-all duration-[800ms]"
+        className="object-cover w-[20%] hover:w-[30%] transition-all duration-[800ms] rounded-r-lg"
       />
-    </div>
+    </section>
   );
 }
