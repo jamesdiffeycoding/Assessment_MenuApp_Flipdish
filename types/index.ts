@@ -1,26 +1,14 @@
-// This file contains types for the fetched menu object sorted by nest depth level.
-
-/* __________________ Nest Level 0 __________________ */
-
-// The whole menu
-type TMenu = {
-  ConcessionStores?: any[]; // unsure of type
+type Menu = {
+  ConcessionStores?: any[];
   DisplaySectionLinks?: boolean;
   MenuId?: number;
   MenuSectionBehaviour?: number;
-  MenuSections: TMenuSectionsArray;
+  MenuSections: MenuSectionHeading[];
   MenuVersionNumber?: number;
   VersionGuid?: string;
 };
 
-/* __________________ Nest Level 1 __________________ */
-
-export type TMenuSectionsArray = TMenuSectionHeading[];
-
-/* __________________ Nest Level 2 __________________ */
-
-// example: "demo", "mains", "desserts", "drinks"
-export type TMenuSectionHeading = {
+export type MenuSectionHeading = {
   CellAspectRatio: number;
   CellLayoutType: number;
   ConcessionStoreId: string | null;
@@ -31,18 +19,15 @@ export type TMenuSectionHeading = {
   IsAvailable: boolean;
   IsDeleted: boolean;
   IsHiddenFromUsers: boolean;
-  MenuItems: TMenuItem[];
-  MenuSectionAvailability: TMenuSectionAvailability;
+  MenuItems: MenuItem[];
+  MenuSectionAvailability: MenuSectionAvailability;
   MenuSectionId: number;
-  MenuSectionMetadata: TMenuItemMetadata[];
-  Name: string;
+  MenuSectionMetadata: MenuItemMetadata[];
+  Name: string; // example: "demo", "mains", "desserts", "drinks"
   PublicId: string;
 };
 
-/* __________________ Nest Level 3 __________________ */
-
-// Nest 3 - example: salad, chips, curry, burger
-export type TMenuItem = {
+export type MenuItem = {
   ActualPrice: number;
   Alcohol: boolean;
   CellAspectRatio: number;
@@ -56,39 +41,36 @@ export type TMenuItem = {
   IsAvailable: boolean;
   IsDeleted: boolean;
   MenuItemId: number;
-  Name: string;
+  Name: string; // example: salad, chips, curry, burger
   Price: number;
   PublicId: string;
   SpicinessRating: number | null;
   Tags: string[];
   TaxRateId: number | null;
   TaxValue: number;
-  MenuItemOptionSets: TMenuItemOptionSet[];
+  MenuItemOptionSets: MenuItemOptionSet[];
   MenuSectionId: number;
   PriceCanIncrease: boolean;
   DailySpecialHours: string[];
-  MenuItemMetadata: TMenuItemMetadata[];
+  MenuItemMetadata: MenuItemMetadata[];
 };
 
-type TMenuSectionAvailability = {
+type MenuSectionAvailability = {
   MenuSectionId: number;
-  AvailableTimes: TAvailableTime[] | null;
+  AvailableTimes: AvailableTime[] | null;
   AvailabilityMode: number;
 };
 
-/* __________________ Nest Level 4 __________________ */
-
-// example: "sizes", "sauces"
-export type TMenuItemOptionSet = {
+export type MenuItemOptionSet = {
   MenuItemOptionSetId: number;
-  Name: string | null;
+  Name: string | null; // example: "sizes", "sauces"
   IsMasterOptionSet: boolean;
   DisplayOrder: number;
   MinSelectCount: number;
   MaxSelectCount: number;
   IsDeleted: boolean;
   PublicId: string;
-  MenuItemOptionSetItems: TMenuItemOptionSetItem[];
+  MenuItemOptionSetItems: MenuItemOptionSetItem[];
   ImageName: string | null;
   ImageUrl: string | null;
   CellAspectRatio: number;
@@ -97,15 +79,15 @@ export type TMenuItemOptionSet = {
   Price?: number;
   TaxRateId?: number | null;
   TaxValue?: number;
-  MenuItemOptionSetMetadata: TMenuItemMetadata[];
+  MenuItemOptionSetMetadata: MenuItemMetadata[];
 };
 
-type TMenuItemMetadata = {
+type MenuItemMetadata = {
   key: string;
   value: string;
 };
 
-type TAvailableTime = {
+type AvailableTime = {
   BusinessHoursPeriodId: number;
   DayOfWeek: number;
   StartTime: string;
@@ -114,12 +96,9 @@ type TAvailableTime = {
   PeriodEarly: string;
 };
 
-/* __________________ Nest Level 5 __________________ */
-
-// examples: "small", "medium", "large", "Corona", "Heineken", "Guinness", "BBQ", "blue cheese"
-type TMenuItemOptionSetItem = {
+type MenuItemOptionSetItem = {
   MenuItemOptionSetItemId: number;
-  Name: string;
+  Name: string; // examples: "small", "medium", "large", "Corona", "Heineken", "Guinness", "BBQ", "blue cheese"
   Price: number;
   TaxRateId: number | null;
   TaxRate: string | null;
@@ -134,5 +113,5 @@ type TMenuItemOptionSetItem = {
   ImageUrl: string | null;
   CellAspectRatio: number;
   CellLayoutType: number;
-  OptionSetItemMetadata: TMenuItemMetadata[];
+  OptionSetItemMetadata: MenuItemMetadata[];
 };
