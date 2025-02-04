@@ -13,11 +13,11 @@ export default function MenuItemCard({
 }) {
   const maxDescriptionLength = 90;
 
-  function gbpPrice(price: number) {
+  function gbpPrice(price: number | null) {
     return new Intl.NumberFormat("en-GB", {
       style: "currency",
       currency: "GBP",
-    }).format(price);
+    }).format(price || 0);
   }
 
   return (
