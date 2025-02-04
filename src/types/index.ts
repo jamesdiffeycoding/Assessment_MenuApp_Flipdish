@@ -1,4 +1,5 @@
 export type MenuSectionHeading = {
+  Name: string; // example: "demo", "mains", "desserts", "drinks"
   CellAspectRatio: number;
   CellLayoutType: number;
   ConcessionStoreId: string | null;
@@ -13,11 +14,11 @@ export type MenuSectionHeading = {
   MenuSectionAvailability: MenuSectionAvailability;
   MenuSectionId: number;
   MenuSectionMetadata: MenuItemMetadata[];
-  Name: string; // example: "demo", "mains", "desserts", "drinks"
   PublicId: string;
 };
 
 export type MenuItem = {
+  Name: string; // example: salad, chips, curry, burger
   ActualPrice: number;
   Alcohol: boolean;
   CellAspectRatio: number;
@@ -31,7 +32,6 @@ export type MenuItem = {
   IsAvailable: boolean;
   IsDeleted: boolean;
   MenuItemId: number;
-  Name: string; // example: salad, chips, curry, burger
   Price: number;
   PublicId: string;
   SpicinessRating: number | null;
@@ -52,8 +52,8 @@ type MenuSectionAvailability = {
 };
 
 export type MenuItemOptionSet = {
-  MenuItemOptionSetId: number;
   Name: string | null; // example: "sizes", "sauces"
+  MenuItemOptionSetId: number;
   IsMasterOptionSet: boolean;
   DisplayOrder: number;
   MinSelectCount: number;
@@ -87,8 +87,8 @@ type AvailableTime = {
 };
 
 type MenuItemOptionSetItem = {
-  MenuItemOptionSetItemId: number;
   Name: string; // examples: "small", "medium", "large", "Corona", "Heineken", "Guinness", "BBQ", "blue cheese"
+  MenuItemOptionSetItemId: number;
   Price: number;
   TaxRateId: number | null;
   TaxRate: string | null;
