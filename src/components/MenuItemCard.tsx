@@ -21,7 +21,7 @@ export default function MenuItemCard({
   }
 
   return (
-    <section className="h-[120px] flex justify-between border border-slate-200 rounded-lg hover:border hover:bg-slate-100 cursor-pointer">
+    <section className="min-w-[300px] h-[120px] flex justify-between border border-slate-200 rounded-lg hover:border hover:bg-slate-100 cursor-pointer">
       <div className="w-[70%] flex flex-col justify-between p-[12px]">
         <div>
           <h3 className="font-bold">
