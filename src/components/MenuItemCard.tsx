@@ -13,6 +13,13 @@ export default function MenuItemCard({
 }) {
   const maxDescriptionLength = 90;
 
+  function gbpPrice(price: number) {
+    return new Intl.NumberFormat("en-GB", {
+      style: "currency",
+      currency: "GBP",
+    }).format(price);
+  }
+
   return (
     <section className="h-[120px] flex justify-between border border-slate-200 rounded-lg hover:border hover:bg-slate-100 cursor-pointer">
       <div className="w-[70%] flex flex-col justify-between p-[12px]">
@@ -25,7 +32,7 @@ export default function MenuItemCard({
             {description && description.length > maxDescriptionLength && "..."}
           </p>
         </div>
-        <p className="text-sm">£{price}</p>
+        <p className="text-sm">{gbpPrice(price)}</p>
       </div>
       <img
         src={imageUrl || "/placeholder.jpg"}
