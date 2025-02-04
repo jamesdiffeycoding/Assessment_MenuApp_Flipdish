@@ -1,7 +1,7 @@
 "use client";
 import axios from "axios";
 import MenuItemCard from "@/components/MenuItemCard";
-import { MenuItem, MenuSectionHeading } from "../../types";
+import { MenuItem, MenuSectionHeading } from "../types";
 import { useEffect, useState } from "react";
 
 const url =
@@ -59,7 +59,7 @@ export default function Home() {
             </p>
           )}
 
-          {sections.map((section) => (
+          {sections.map((section, index) => (
             <div key={section.MenuSectionId}>
               <h2 className="text-xl pb-2 font-bold">{section.Name}</h2>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
