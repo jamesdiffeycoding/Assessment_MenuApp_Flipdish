@@ -17,7 +17,8 @@ It is available to view online at [Flipdish Tech Assessment](https://flipdish-te
 ## Additions
 
 - Add type checks for fetched menu object ✓
-- Add loading message when fetching data ✓
+- Add loading spinner when fetching data ✓
+- Add error message display if error in fetching occurs ✓
 - Add zoom feature when image hovered where space permits ✓
 - Add description length limit in UI ✓
 - Add placeholder image if image not found (e.g. on "Chris's test item") ✓
