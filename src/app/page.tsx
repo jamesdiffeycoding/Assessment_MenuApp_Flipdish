@@ -55,7 +55,7 @@ export default function Home() {
           )}
           {errorMessage && (
             <p className="text-red-500">
-              {errorMessage}. Don't worry, it should be fixed before long.
+              {errorMessage}. Don&apos;t worry, it should be fixed before long.
             </p>
           )}
 
