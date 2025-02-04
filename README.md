@@ -6,21 +6,22 @@ It is available to view online at [Flipdish Tech Assessment](https://flipdish-te
 
 ## Requirements (all met)
 
-- Deploy [online on Vercel](https://flipdish-tech-assessment.vercel.app/) ✓ 
-- Render menu item name ✓ 
-- Render menu item image ✓ 
-- Render menu item price ✓ 
-- Render menu item description ✓ 
-- Mobile first, responsive layout ✓ 
-- Include menu items and prices with options depending on flag (isMasterOptionSet) ✓ 
+- Deploy [online on Vercel](https://flipdish-tech-assessment.vercel.app/) ✓
+- Render menu item name ✓
+- Render menu item image ✓
+- Render menu item price ✓
+- Render menu item description ✓
+- Mobile first, responsive layout ✓
+- Include menu items and prices with options depending on flag (isMasterOptionSet) ✓
 
 ## Additions
 
-- Add type checks for fetched menu object ✓ 
-- Add loading message when fetching data ✓ 
-- Add zoom feature when image hovered where space permits ✓ 
-- Add placeholder image if image not found (e.g. on "Chris's test item") ✓ 
-- Flipcard link, font, and food-favicon ✓ 
+- Add type checks for fetched menu object ✓
+- Add loading message when fetching data ✓
+- Add zoom feature when image hovered where space permits ✓
+- Add description length limit in UI ✓
+- Add placeholder image if image not found (e.g. on "Chris's test item") ✓
+- Flipcard link, font, and food-favicon ✓
 
 ## If I had more time
 
