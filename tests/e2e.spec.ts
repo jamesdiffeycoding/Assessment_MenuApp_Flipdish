@@ -56,9 +56,9 @@ test("has correct prices for both items and options in Intl format", async ({
   page,
 }) => {
   await page.goto(localHost);
-  const pizzaCard = await page.locator("section").filter({ hasText: "Pizza" });
+  const pizzaCard = page.locator("section").filter({ hasText: "Pizza" });
   await expect(pizzaCard.locator("p.text-sm")).toHaveText("£10.00");
-  const chipsSmallOption = await page
+  const chipsSmallOption = page
     .locator("section")
     .filter({ hasText: "Chips | Small" });
   await expect(chipsSmallOption.locator("p.text-sm")).toHaveText("£3.00");

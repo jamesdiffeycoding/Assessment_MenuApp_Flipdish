@@ -1,7 +1,7 @@
 "use client";
 import axios from "axios";
 import MenuItemCard from "@/components/MenuItemCard";
-import { MenuItem, MenuSectionHeading } from "../types";
+import { Menu, MenuItem, MenuSectionHeading } from "../types";
 import { useEffect, useState } from "react";
 
 const url =
@@ -13,17 +13,23 @@ export default function Home() {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    axios
-      .get(url)
-      .then(({ data }) => {
-        setSections(data.MenuSections);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setLoading(false);
-        setErrorMessage(error.message);
-      });
+    fetchData();
   }, []);
+
+  async function fetchData() {
+    try {
+      const response = await axios.get<Menu>(url);
+      setSections(response.data.MenuSections);
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error)) {
+        setErrorMessage(error.message);
+      } else {
+        setErrorMessage("An unknown error occurred");
+      }
+    } finally {
+      setLoading(false);
+    }
+  }
 
   function itemHasNoOptionsToShow(menuItem: MenuItem) {
     // if an item has any option sets where isMasterOptionSet is true, it should not be displayed alone

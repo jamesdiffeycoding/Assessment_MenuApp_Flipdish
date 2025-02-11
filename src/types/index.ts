@@ -1,3 +1,13 @@
+export type Menu = {
+  ConcessionStores?: any[];
+  DisplaySectionLinks?: boolean;
+  MenuId?: number;
+  MenuSectionBehaviour?: number;
+  MenuSections: MenuSectionHeading[];
+  MenuVersionNumber?: number;
+  VersionGuid?: string;
+};
+
 export type MenuSectionHeading = {
   Name: string; // example: "demo", "mains", "desserts", "drinks"
   CellAspectRatio: number;
