@@ -1,5 +1,5 @@
 export type Menu = {
-  ConcessionStores?: any[];
+  ConcessionStores?: [];
   DisplaySectionLinks?: boolean;
   MenuId?: number;
   MenuSectionBehaviour?: number;
