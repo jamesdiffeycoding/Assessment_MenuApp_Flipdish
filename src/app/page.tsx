@@ -2,7 +2,7 @@
 import axios from "axios";
 import MenuItemCard from "@/components/MenuItemCard";
 import { Menu, MenuItem, MenuSectionHeading } from "../types";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const url =
   "https://menus.flipdish.co/prod/16798/e6220da2-c34a-4ea2-bb51-a3e190fc5f08.json";
@@ -12,11 +12,7 @@ export default function Home() {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  async function fetchData() {
+  const fetchData = useCallback(async () => {
     try {
       const response = await axios.get<Menu>(url);
       setSections(response.data.MenuSections);
@@ -29,14 +25,18 @@ export default function Home() {
     } finally {
       setLoading(false);
     }
-  }
+  }, []);
 
-  function itemHasNoOptionsToShow(menuItem: MenuItem) {
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
+  const itemHasNoOptionsToShow = (menuItem: MenuItem) => {
     // if an item has any option sets where isMasterOptionSet is true, it should not be displayed alone
     return !menuItem.MenuItemOptionSets.some(
       (optionSet) => optionSet.IsMasterOptionSet === true
     );
-  }
+  };
 
   return (
     <div className="m-4 flex justify-center">
